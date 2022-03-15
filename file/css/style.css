@@ -12,6 +12,7 @@
 /*******************************************/
 body{
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 .container{
@@ -56,7 +57,7 @@ body{
 .container-status{
   display: flex;
   justify-content: center;
-  gap: 20px;
+
 }
 .container-status > div{
   display: flex;
@@ -67,6 +68,7 @@ body{
   height: 52px;
   width: 78px;
   border-radius: 12px;
+  margin: 10px;
 }
 
 /* STATUS TEXT (POST FOLLOWER AND FOLLOWING */
@@ -95,30 +97,38 @@ body{
   margin-bottom: 5px;
 }
 
+.container-top-section div{
+  margin: 7px;
+}
 
-/* LOWER SECTION */
+
+
+
 .container-lower-section{
-  display: flex;
-  height: 200px;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
   justify-content: center;
+}
+
+.container-lower-section > div{
+  margin: 0 7px;
 }
 
 .left-lower-section{
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
+
 
 .left-section-bottom{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 13px;
+  margin-top: 7px;
 }
 
-.right-lower-section{
-  flex-basis: 104vh;
-}
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -133,16 +143,21 @@ img{
 /* FOOTER */
 footer{
   margin-top: 30px;
-  font-size: 12px;
+  font-size: 2vh;
   text-align: center;
   color: #BDBDBD;
 }
 
 /* MEDIA QUERIES */
+@media (min-width:320px){
+ section{
+   margin-top: 0;
+ }
+}
 
 @media (min-width:375px){
   section{
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
 }
 
@@ -166,4 +181,19 @@ footer{
   .container-top-section{
     overflow: visible;
   }
+
+  /* .right-lower-section{
+    flex-basis: 56vh;
+  } */
+}
+
+@media (min-width:1280px){
+  section{
+    margin-top: 230px;
+    margin-bottom: 500px;
+  }
+
+  /* .right-lower-section{
+    flex-basis: 60vh;
+  } */
 }
