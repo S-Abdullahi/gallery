@@ -107,7 +107,6 @@ body{
 .container-lower-section{
   display: grid;
   grid-template-columns: 2fr 1fr; 
-  justify-content: center;
 }
 
 .container-lower-section > div{
@@ -117,6 +116,7 @@ body{
 .left-lower-section{
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 
@@ -125,6 +125,7 @@ body{
   grid-template-columns: 1fr 1fr;
   grid-gap: 13px;
   margin-top: 7px;
+  
 }
 
 
@@ -182,9 +183,14 @@ footer{
     overflow: visible;
   }
 
-  /* .right-lower-section{
-    flex-basis: 56vh;
-  } */
+.right{
+  height: 100%;
+}
+
+.container-lower-section{
+  margin-top: 20px;
+}
+
 }
 
 @media (min-width:1280px){
@@ -193,7 +199,4 @@ footer{
     margin-bottom: 500px;
   }
 
-  /* .right-lower-section{
-    flex-basis: 60vh;
-  } */
 }
