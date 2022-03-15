@@ -1,0 +1,169 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  padding: 0 10px;
+  margin:auto;
+  position:relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+.container-profile{
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: 140px;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.container-profile img{
+  max-width: 100%;
+  border-radius: 15px;
+  
+}
+
+/* heading text */
+.container-profile span{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4E5150;
+}
+
+.container-profile span+span{
+  font-size: 10px;
+  line-height: 12px;
+  color: #A9A9A9;
+}
+
+/* STATUS (POST, FOLLOWERS AND FOLLOWING) */
+
+.container-status{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.container-status > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E5E5;
+  height: 52px;
+  width: 78px;
+  border-radius: 12px;
+}
+
+/* STATUS TEXT (POST FOLLOWER AND FOLLOWING */
+.container-status span{
+  font-size: 12px;
+  line-height: 14.63px;
+  font-weight: 600;
+  color: #4E5150;
+}
+
+.container-status span+span{
+  color: #BDBDBD;
+}
+
+
+/* SECTION */
+/* TOP SECTION */
+.container-top-section{
+  display: flex;
+  height: 150px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+
+/* LOWER SECTION */
+.container-lower-section{
+  display: flex;
+  height: 200px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.left-lower-section{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.left-section-bottom{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.right-lower-section{
+  flex-basis: 104vh;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* IMAGE */
+
+img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* FOOTER */
+footer{
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+  color: #BDBDBD;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:375px){
+  section{
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width:425px){
+  section{
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+}
+
+@media(min-width:768px){
+  .container{
+    max-width: 1000px;
+  }
+
+  section{
+    margin-top: 150px;
+    margin-bottom: 350px;
+  }
+
+  .container-top-section{
+    overflow: visible;
+  }
+}
